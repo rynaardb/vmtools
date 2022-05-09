@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F10E3CFD2824349A009C9814 /* VMToolsShared.h in Headers */ = {isa = PBXBuildFile; fileRef = F10E3CFC2824349A009C9814 /* VMToolsShared.h */; };
+		F10E3CFF2824349A009C9814 /* VMToolsShared.m in Sources */ = {isa = PBXBuildFile; fileRef = F10E3CFE2824349A009C9814 /* VMToolsShared.m */; };
+		F10E3D03282434B7009C9814 /* MessagePortHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E3CF4282410F0009C9814 /* MessagePortHelper.swift */; };
+		F10E3D04282434DC009C9814 /* libVMToolsShared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */; };
+		F10E3D05282434DC009C9814 /* libVMToolsShared.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F10E3D09282435ED009C9814 /* VMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308EB282304B80026F08C /* VMManager.swift */; };
+		F10E3D0A2824361C009C9814 /* Virtualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B308E9282304450026F08C /* Virtualization.framework */; };
+		F10E3D0B282436AE009C9814 /* MacOSVirtualMachineInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308E02823042E0026F08C /* MacOSVirtualMachineInstaller.swift */; };
+		F10E3D0C282436AE009C9814 /* VMInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1162361282332FD00F4E81C /* VMInventory.swift */; };
+		F10E3D0D282436AE009C9814 /* MacOSRestoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308DE2823042E0026F08C /* MacOSRestoreImage.swift */; };
+		F10E3D0E282436AE009C9814 /* MacOSVirtualMachineConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308E22823042E0026F08C /* MacOSVirtualMachineConfigurationHelper.swift */; };
+		F10E3D0F282436AE009C9814 /* MacOSVirtualMachineDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308DF2823042E0026F08C /* MacOSVirtualMachineDelegate.swift */; };
+		F10E3D11282439DA009C9814 /* libVMToolsShared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */; };
+		F10E3D12282439DA009C9814 /* libVMToolsShared.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F10E3D1928246F52009C9814 /* VMStateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E3D1828246F52009C9814 /* VMStateObserver.swift */; };
+		F10E3D1B282582D0009C9814 /* Virtualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B308E9282304450026F08C /* Virtualization.framework */; };
+		F10E3D1E2825BA44009C9814 /* VMListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E3D1D2825BA44009C9814 /* VMListView.swift */; };
+		F11623502823252A00F4E81C /* VirtualMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116234F2823252A00F4E81C /* VirtualMachineView.swift */; };
+		F116235828232E8400F4E81C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116235728232E8400F4E81C /* main.swift */; };
+		F142852728283ACE00C44364 /* VMListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142852628283ACE00C44364 /* VMListViewItem.swift */; };
+		F1B308B42822F8F00026F08C /* VMToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308B32822F8F00026F08C /* VMToolsApp.swift */; };
+		F1B308B62822F8F00026F08C /* VMViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308B52822F8F00026F08C /* VMViewer.swift */; };
+		F1B308B82822F8F20026F08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B308B72822F8F20026F08C /* Assets.xcassets */; };
+		F1B308BB2822F8F20026F08C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B308BA2822F8F20026F08C /* Preview Assets.xcassets */; };
+		F1B308C62822F8F20026F08C /* VMToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308C52822F8F20026F08C /* VMToolsTests.swift */; };
+		F1B308D02822F8F20026F08C /* VMToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308CF2822F8F20026F08C /* VMToolsUITests.swift */; };
+		F1B308D22822F8F20026F08C /* VMToolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308D12822F8F20026F08C /* VMToolsUITestsLaunchTests.swift */; };
+		F1B308EA282304450026F08C /* Virtualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B308E9282304450026F08C /* Virtualization.framework */; };
+		F1D7040B2826758C00D4D081 /* VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7040A2826758C00D4D081 /* VM.swift */; };
+		F1D7040E2826903900D4D081 /* VMConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7040D2826903900D4D081 /* VMConfiguration.swift */; };
+		F1D70410282694F200D4D081 /* VMBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7040F282694F200D4D081 /* VMBundle.swift */; };
+		F1D704162826F48D00D4D081 /* CommandMessageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D704152826F48D00D4D081 /* CommandMessageProcessor.swift */; };
+		F1D704182826F70D00D4D081 /* StartVMCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D704172826F70D00D4D081 /* StartVMCommand.swift */; };
+		F1D7041C2827162600D4D081 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7041B2827162600D4D081 /* Command.swift */; };
+		F1D7041E282716DB00D4D081 /* CommandFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7041D282716DB00D4D081 /* CommandFactory.swift */; };
+		F1D7042128271A7500D4D081 /* StopVMCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7042028271A7500D4D081 /* StopVMCommand.swift */; };
+		F1D7042328271BD100D4D081 /* CreateVMCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D7042228271BD100D4D081 /* CreateVMCommand.swift */; };
+		F1D704242827293900D4D081 /* CommandMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D704132826EEDA00D4D081 /* CommandMessage.swift */; };
+		F1D7042728272EF100D4D081 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D7042628272EF100D4D081 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F10E3D06282434DC009C9814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B308A82822F8F00026F08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F10E3CF92824349A009C9814;
+			remoteInfo = VMToolShared;
+		};
+		F10E3D13282439DA009C9814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B308A82822F8F00026F08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F10E3CF92824349A009C9814;
+			remoteInfo = VMToolsShared;
+		};
+		F1B308C22822F8F20026F08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B308A82822F8F00026F08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B308AF2822F8F00026F08C;
+			remoteInfo = VMTools;
+		};
+		F1B308CC2822F8F20026F08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B308A82822F8F00026F08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B308AF2822F8F00026F08C;
+			remoteInfo = VMTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F10E3D08282434DC009C9814 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F10E3D05282434DC009C9814 /* libVMToolsShared.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10E3D15282439DA009C9814 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F10E3D12282439DA009C9814 /* libVMToolsShared.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F116235328232E8400F4E81C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F10E3CF4282410F0009C9814 /* MessagePortHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePortHelper.swift; sourceTree = "<group>"; };
+		F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libVMToolsShared.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10E3CFC2824349A009C9814 /* VMToolsShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMToolsShared.h; sourceTree = "<group>"; };
+		F10E3CFE2824349A009C9814 /* VMToolsShared.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VMToolsShared.m; sourceTree = "<group>"; };
+		F10E3D1828246F52009C9814 /* VMStateObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStateObserver.swift; sourceTree = "<group>"; };
+		F10E3D1D2825BA44009C9814 /* VMListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMListView.swift; sourceTree = "<group>"; };
+		F10E3D1F2825BDA4009C9814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F116234F2823252A00F4E81C /* VirtualMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMachineView.swift; sourceTree = "<group>"; };
+		F116235528232E8400F4E81C /* vmtools-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "vmtools-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F116235728232E8400F4E81C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F1162361282332FD00F4E81C /* VMInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMInventory.swift; sourceTree = "<group>"; };
+		F142852628283ACE00C44364 /* VMListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMListViewItem.swift; sourceTree = "<group>"; };
+		F1B308B02822F8F00026F08C /* VMTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B308B32822F8F00026F08C /* VMToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMToolsApp.swift; sourceTree = "<group>"; };
+		F1B308B52822F8F00026F08C /* VMViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMViewer.swift; sourceTree = "<group>"; };
+		F1B308B72822F8F20026F08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1B308BA2822F8F20026F08C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1B308BC2822F8F20026F08C /* VMTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VMTools.entitlements; sourceTree = "<group>"; };
+		F1B308C12822F8F20026F08C /* VMToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B308C52822F8F20026F08C /* VMToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMToolsTests.swift; sourceTree = "<group>"; };
+		F1B308CB2822F8F20026F08C /* VMToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B308CF2822F8F20026F08C /* VMToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMToolsUITests.swift; sourceTree = "<group>"; };
+		F1B308D12822F8F20026F08C /* VMToolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMToolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1B308DE2823042E0026F08C /* MacOSRestoreImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSRestoreImage.swift; sourceTree = "<group>"; };
+		F1B308DF2823042E0026F08C /* MacOSVirtualMachineDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSVirtualMachineDelegate.swift; sourceTree = "<group>"; };
+		F1B308E02823042E0026F08C /* MacOSVirtualMachineInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSVirtualMachineInstaller.swift; sourceTree = "<group>"; };
+		F1B308E22823042E0026F08C /* MacOSVirtualMachineConfigurationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSVirtualMachineConfigurationHelper.swift; sourceTree = "<group>"; };
+		F1B308E9282304450026F08C /* Virtualization.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Virtualization.framework; path = System/Library/Frameworks/Virtualization.framework; sourceTree = SDKROOT; };
+		F1B308EB282304B80026F08C /* VMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMManager.swift; sourceTree = "<group>"; };
+		F1D7040A2826758C00D4D081 /* VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VM.swift; sourceTree = "<group>"; };
+		F1D7040D2826903900D4D081 /* VMConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMConfiguration.swift; sourceTree = "<group>"; };
+		F1D7040F282694F200D4D081 /* VMBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBundle.swift; sourceTree = "<group>"; };
+		F1D704112826AC4E00D4D081 /* vmtools-cli.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "vmtools-cli.entitlements"; sourceTree = "<group>"; };
+		F1D704132826EEDA00D4D081 /* CommandMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandMessage.swift; sourceTree = "<group>"; };
+		F1D704152826F48D00D4D081 /* CommandMessageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandMessageProcessor.swift; sourceTree = "<group>"; };
+		F1D704172826F70D00D4D081 /* StartVMCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVMCommand.swift; sourceTree = "<group>"; };
+		F1D7041B2827162600D4D081 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		F1D7041D282716DB00D4D081 /* CommandFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandFactory.swift; sourceTree = "<group>"; };
+		F1D7042028271A7500D4D081 /* StopVMCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopVMCommand.swift; sourceTree = "<group>"; };
+		F1D7042228271BD100D4D081 /* CreateVMCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVMCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10E3CF82824349A009C9814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10E3D0A2824361C009C9814 /* Virtualization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F116235228232E8400F4E81C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D7042728272EF100D4D081 /* ArgumentParser in Frameworks */,
+				F10E3D1B282582D0009C9814 /* Virtualization.framework in Frameworks */,
+				F10E3D11282439DA009C9814 /* libVMToolsShared.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308AD2822F8F00026F08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B308EA282304450026F08C /* Virtualization.framework in Frameworks */,
+				F10E3D04282434DC009C9814 /* libVMToolsShared.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308BE2822F8F20026F08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308C82822F8F20026F08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F10E3CFB2824349A009C9814 /* VMToolsShared */ = {
+			isa = PBXGroup;
+			children = (
+				F1D7041F2827172600D4D081 /* Commands */,
+				F1D704122826EEC500D4D081 /* CommandMessages */,
+				F1D7040C2826900900D4D081 /* Models */,
+				F1B308DE2823042E0026F08C /* MacOSRestoreImage.swift */,
+				F1B308E22823042E0026F08C /* MacOSVirtualMachineConfigurationHelper.swift */,
+				F1B308DF2823042E0026F08C /* MacOSVirtualMachineDelegate.swift */,
+				F1B308E02823042E0026F08C /* MacOSVirtualMachineInstaller.swift */,
+				F10E3CF4282410F0009C9814 /* MessagePortHelper.swift */,
+				F1162361282332FD00F4E81C /* VMInventory.swift */,
+				F1B308EB282304B80026F08C /* VMManager.swift */,
+				F10E3CFC2824349A009C9814 /* VMToolsShared.h */,
+				F10E3CFE2824349A009C9814 /* VMToolsShared.m */,
+				F10E3D1828246F52009C9814 /* VMStateObserver.swift */,
+			);
+			path = VMToolsShared;
+			sourceTree = "<group>";
+		};
+		F116235628232E8400F4E81C /* VMToolsCLI */ = {
+			isa = PBXGroup;
+			children = (
+				F116235728232E8400F4E81C /* main.swift */,
+			);
+			path = VMToolsCLI;
+			sourceTree = "<group>";
+		};
+		F1B308A72822F8F00026F08C = {
+			isa = PBXGroup;
+			children = (
+				F1D704112826AC4E00D4D081 /* vmtools-cli.entitlements */,
+				F1B308E8282304450026F08C /* Frameworks */,
+				F1B308B12822F8F00026F08C /* Products */,
+				F1B308B22822F8F00026F08C /* VMTools */,
+				F116235628232E8400F4E81C /* VMToolsCLI */,
+				F10E3CFB2824349A009C9814 /* VMToolsShared */,
+				F1B308C42822F8F20026F08C /* VMToolsTests */,
+				F1B308CE2822F8F20026F08C /* VMToolsUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		F1B308B12822F8F00026F08C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1B308B02822F8F00026F08C /* VMTools.app */,
+				F1B308C12822F8F20026F08C /* VMToolsTests.xctest */,
+				F1B308CB2822F8F20026F08C /* VMToolsUITests.xctest */,
+				F116235528232E8400F4E81C /* vmtools-cli */,
+				F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1B308B22822F8F00026F08C /* VMTools */ = {
+			isa = PBXGroup;
+			children = (
+				F1B308B72822F8F20026F08C /* Assets.xcassets */,
+				F10E3D1F2825BDA4009C9814 /* Info.plist */,
+				F1B308B92822F8F20026F08C /* Preview Content */,
+				F116234F2823252A00F4E81C /* VirtualMachineView.swift */,
+				F10E3D1D2825BA44009C9814 /* VMListView.swift */,
+				F142852628283ACE00C44364 /* VMListViewItem.swift */,
+				F1B308BC2822F8F20026F08C /* VMTools.entitlements */,
+				F1B308B32822F8F00026F08C /* VMToolsApp.swift */,
+				F1B308B52822F8F00026F08C /* VMViewer.swift */,
+			);
+			path = VMTools;
+			sourceTree = "<group>";
+		};
+		F1B308B92822F8F20026F08C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1B308BA2822F8F20026F08C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1B308C42822F8F20026F08C /* VMToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B308C52822F8F20026F08C /* VMToolsTests.swift */,
+			);
+			path = VMToolsTests;
+			sourceTree = "<group>";
+		};
+		F1B308CE2822F8F20026F08C /* VMToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B308CF2822F8F20026F08C /* VMToolsUITests.swift */,
+				F1B308D12822F8F20026F08C /* VMToolsUITestsLaunchTests.swift */,
+			);
+			path = VMToolsUITests;
+			sourceTree = "<group>";
+		};
+		F1B308E8282304450026F08C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B308E9282304450026F08C /* Virtualization.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1D7040C2826900900D4D081 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1D7040A2826758C00D4D081 /* VM.swift */,
+				F1D7040D2826903900D4D081 /* VMConfiguration.swift */,
+				F1D7040F282694F200D4D081 /* VMBundle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1D704122826EEC500D4D081 /* CommandMessages */ = {
+			isa = PBXGroup;
+			children = (
+				F1D704132826EEDA00D4D081 /* CommandMessage.swift */,
+				F1D704152826F48D00D4D081 /* CommandMessageProcessor.swift */,
+			);
+			path = CommandMessages;
+			sourceTree = "<group>";
+		};
+		F1D7041F2827172600D4D081 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				F1D7041B2827162600D4D081 /* Command.swift */,
+				F1D7041D282716DB00D4D081 /* CommandFactory.swift */,
+				F1D704172826F70D00D4D081 /* StartVMCommand.swift */,
+				F1D7042028271A7500D4D081 /* StopVMCommand.swift */,
+				F1D7042228271BD100D4D081 /* CreateVMCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F10E3CF62824349A009C9814 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10E3CFD2824349A009C9814 /* VMToolsShared.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F10E3CF92824349A009C9814 /* VMToolsShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10E3D002824349A009C9814 /* Build configuration list for PBXNativeTarget "VMToolsShared" */;
+			buildPhases = (
+				F10E3CF62824349A009C9814 /* Headers */,
+				F10E3CF72824349A009C9814 /* Sources */,
+				F10E3CF82824349A009C9814 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMToolsShared;
+			productName = VMToolShared;
+			productReference = F10E3CFA2824349A009C9814 /* libVMToolsShared.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		F116235428232E8400F4E81C /* vmtools-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F116235928232E8400F4E81C /* Build configuration list for PBXNativeTarget "vmtools-cli" */;
+			buildPhases = (
+				F116235128232E8400F4E81C /* Sources */,
+				F116235228232E8400F4E81C /* Frameworks */,
+				F116235328232E8400F4E81C /* CopyFiles */,
+				F10E3D15282439DA009C9814 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F10E3D14282439DA009C9814 /* PBXTargetDependency */,
+			);
+			name = "vmtools-cli";
+			packageProductDependencies = (
+				F1D7042628272EF100D4D081 /* ArgumentParser */,
+			);
+			productName = VMToolsCLI;
+			productReference = F116235528232E8400F4E81C /* vmtools-cli */;
+			productType = "com.apple.product-type.tool";
+		};
+		F1B308AF2822F8F00026F08C /* VMTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B308D52822F8F20026F08C /* Build configuration list for PBXNativeTarget "VMTools" */;
+			buildPhases = (
+				F1B308AC2822F8F00026F08C /* Sources */,
+				F1B308AD2822F8F00026F08C /* Frameworks */,
+				F1B308AE2822F8F00026F08C /* Resources */,
+				F10E3D08282434DC009C9814 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F10E3D07282434DC009C9814 /* PBXTargetDependency */,
+			);
+			name = VMTools;
+			packageProductDependencies = (
+			);
+			productName = VMTools;
+			productReference = F1B308B02822F8F00026F08C /* VMTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1B308C02822F8F20026F08C /* VMToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B308D82822F8F20026F08C /* Build configuration list for PBXNativeTarget "VMToolsTests" */;
+			buildPhases = (
+				F1B308BD2822F8F20026F08C /* Sources */,
+				F1B308BE2822F8F20026F08C /* Frameworks */,
+				F1B308BF2822F8F20026F08C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B308C32822F8F20026F08C /* PBXTargetDependency */,
+			);
+			name = VMToolsTests;
+			productName = VMToolsTests;
+			productReference = F1B308C12822F8F20026F08C /* VMToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1B308CA2822F8F20026F08C /* VMToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B308DB2822F8F20026F08C /* Build configuration list for PBXNativeTarget "VMToolsUITests" */;
+			buildPhases = (
+				F1B308C72822F8F20026F08C /* Sources */,
+				F1B308C82822F8F20026F08C /* Frameworks */,
+				F1B308C92822F8F20026F08C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B308CD2822F8F20026F08C /* PBXTargetDependency */,
+			);
+			name = VMToolsUITests;
+			productName = VMToolsUITests;
+			productReference = F1B308CB2822F8F20026F08C /* VMToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1B308A82822F8F00026F08C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F10E3CF92824349A009C9814 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F116235428232E8400F4E81C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F1B308AF2822F8F00026F08C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F1B308C02822F8F20026F08C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F1B308AF2822F8F00026F08C;
+					};
+					F1B308CA2822F8F20026F08C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F1B308AF2822F8F00026F08C;
+					};
+				};
+			};
+			buildConfigurationList = F1B308AB2822F8F00026F08C /* Build configuration list for PBXProject "VMTools" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1B308A72822F8F00026F08C;
+			packageReferences = (
+				F1D7042528272EF100D4D081 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = F1B308B12822F8F00026F08C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1B308AF2822F8F00026F08C /* VMTools */,
+				F1B308C02822F8F20026F08C /* VMToolsTests */,
+				F1B308CA2822F8F20026F08C /* VMToolsUITests */,
+				F116235428232E8400F4E81C /* vmtools-cli */,
+				F10E3CF92824349A009C9814 /* VMToolsShared */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1B308AE2822F8F00026F08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B308BB2822F8F20026F08C /* Preview Assets.xcassets in Resources */,
+				F1B308B82822F8F20026F08C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308BF2822F8F20026F08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308C92822F8F20026F08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F10E3CF72824349A009C9814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D7041C2827162600D4D081 /* Command.swift in Sources */,
+				F10E3D0E282436AE009C9814 /* MacOSVirtualMachineConfigurationHelper.swift in Sources */,
+				F1D7042128271A7500D4D081 /* StopVMCommand.swift in Sources */,
+				F1D70410282694F200D4D081 /* VMBundle.swift in Sources */,
+				F1D704162826F48D00D4D081 /* CommandMessageProcessor.swift in Sources */,
+				F10E3D03282434B7009C9814 /* MessagePortHelper.swift in Sources */,
+				F10E3D0F282436AE009C9814 /* MacOSVirtualMachineDelegate.swift in Sources */,
+				F10E3D09282435ED009C9814 /* VMManager.swift in Sources */,
+				F1D7040E2826903900D4D081 /* VMConfiguration.swift in Sources */,
+				F1D7041E282716DB00D4D081 /* CommandFactory.swift in Sources */,
+				F1D704242827293900D4D081 /* CommandMessage.swift in Sources */,
+				F10E3D0D282436AE009C9814 /* MacOSRestoreImage.swift in Sources */,
+				F10E3D0C282436AE009C9814 /* VMInventory.swift in Sources */,
+				F10E3D0B282436AE009C9814 /* MacOSVirtualMachineInstaller.swift in Sources */,
+				F1D7040B2826758C00D4D081 /* VM.swift in Sources */,
+				F10E3CFF2824349A009C9814 /* VMToolsShared.m in Sources */,
+				F10E3D1928246F52009C9814 /* VMStateObserver.swift in Sources */,
+				F1D7042328271BD100D4D081 /* CreateVMCommand.swift in Sources */,
+				F1D704182826F70D00D4D081 /* StartVMCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F116235128232E8400F4E81C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F116235828232E8400F4E81C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308AC2822F8F00026F08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B308B62822F8F00026F08C /* VMViewer.swift in Sources */,
+				F10E3D1E2825BA44009C9814 /* VMListView.swift in Sources */,
+				F1B308B42822F8F00026F08C /* VMToolsApp.swift in Sources */,
+				F11623502823252A00F4E81C /* VirtualMachineView.swift in Sources */,
+				F142852728283ACE00C44364 /* VMListViewItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308BD2822F8F20026F08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B308C62822F8F20026F08C /* VMToolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B308C72822F8F20026F08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B308D02822F8F20026F08C /* VMToolsUITests.swift in Sources */,
+				F1B308D22822F8F20026F08C /* VMToolsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F10E3D07282434DC009C9814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F10E3CF92824349A009C9814 /* VMToolsShared */;
+			targetProxy = F10E3D06282434DC009C9814 /* PBXContainerItemProxy */;
+		};
+		F10E3D14282439DA009C9814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F10E3CF92824349A009C9814 /* VMToolsShared */;
+			targetProxy = F10E3D13282439DA009C9814 /* PBXContainerItemProxy */;
+		};
+		F1B308C32822F8F20026F08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B308AF2822F8F00026F08C /* VMTools */;
+			targetProxy = F1B308C22822F8F20026F08C /* PBXContainerItemProxy */;
+		};
+		F1B308CD2822F8F20026F08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B308AF2822F8F00026F08C /* VMTools */;
+			targetProxy = F1B308CC2822F8F20026F08C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F10E3D012824349A009C9814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F10E3D022824349A009C9814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F116235A28232E8400F4E81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "vmtools-cli.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F116235B28232E8400F4E81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "vmtools-cli.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1B308D32822F8F20026F08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1B308D42822F8F20026F08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1B308D62822F8F20026F08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VMTools/VMTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VMTools/Preview Content\"";
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VMTools/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rynaardburger.VMTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1B308D72822F8F20026F08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VMTools/VMTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VMTools/Preview Content\"";
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VMTools/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rynaardburger.VMTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1B308D92822F8F20026F08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rynaardburger.VMToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMTools.app/Contents/MacOS/VMTools";
+			};
+			name = Debug;
+		};
+		F1B308DA2822F8F20026F08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rynaardburger.VMToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMTools.app/Contents/MacOS/VMTools";
+			};
+			name = Release;
+		};
+		F1B308DC2822F8F20026F08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rynaardburger.VMToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VMTools;
+			};
+			name = Debug;
+		};
+		F1B308DD2822F8F20026F08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LD3CQJL7N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rynaardburger.VMToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VMTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10E3D002824349A009C9814 /* Build configuration list for PBXNativeTarget "VMToolsShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10E3D012824349A009C9814 /* Debug */,
+				F10E3D022824349A009C9814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F116235928232E8400F4E81C /* Build configuration list for PBXNativeTarget "vmtools-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F116235A28232E8400F4E81C /* Debug */,
+				F116235B28232E8400F4E81C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B308AB2822F8F00026F08C /* Build configuration list for PBXProject "VMTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B308D32822F8F20026F08C /* Debug */,
+				F1B308D42822F8F20026F08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B308D52822F8F20026F08C /* Build configuration list for PBXNativeTarget "VMTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B308D62822F8F20026F08C /* Debug */,
+				F1B308D72822F8F20026F08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B308D82822F8F20026F08C /* Build configuration list for PBXNativeTarget "VMToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B308D92822F8F20026F08C /* Debug */,
+				F1B308DA2822F8F20026F08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B308DB2822F8F20026F08C /* Build configuration list for PBXNativeTarget "VMToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B308DC2822F8F20026F08C /* Debug */,
+				F1B308DD2822F8F20026F08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1D7042528272EF100D4D081 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1D7042628272EF100D4D081 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1D7042528272EF100D4D081 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F1B308A82822F8F00026F08C /* Project object */;
+}
