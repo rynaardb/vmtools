@@ -30,16 +30,6 @@ struct VMToolsApp: App {
         //        }
         //        .handlesExternalEvents(matching: Set(arrayLiteral: "VMViewerWindow"))
     }
-    
-    static func openVMViewerWindow(vm: VM) {
-        vmViewerWindow.contentView = NSHostingView(rootView: VMViewer(vm: vm.vzVirtualMachine!))
-        vmViewerWindow.title = " " + vm.name
-        vmViewerWindow.makeKeyAndOrderFront(nil)
-    }
-    
-    static func closeVMViewer() {
-        vmViewerWindow.close()
-    }
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
@@ -68,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         self.popover = NSPopover()
         self.popover.contentSize = NSSize(width: 330, height: 300)
         self.popover.behavior = .transient
-        self.popover.contentViewController = NSHostingController(rootView: VMListView())
+        self.popover.contentViewController = NSHostingController(rootView: VMListView(viewModel: VMListViewModel()))
     }
     
     @objc func togglePopover() {

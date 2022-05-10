@@ -8,26 +8,20 @@
 import SwiftUI
 
 struct VMListView: View {
+    let viewModel: VMListViewModel
+    
     var body: some View {
-        List {
-            VMListViewItem(title: " xcode-13-2-1", vmIdentifier: "")
-                .listRowBackground(Color.green.opacity(0.1))
-            VMListViewItem(title: " xcode-13-3", vmIdentifier: "")
-                .listRowBackground(Color.red.opacity(0.1))
-            VMListViewItem(title: " xcode-13-3-1", vmIdentifier: "")
-                .listRowBackground(Color.orange.opacity(0.1))
-            VMListViewItem(title: " xcode-13-2", vmIdentifier: "")
-                .listRowBackground(Color.red.opacity(0.1))
-            VMListViewItem(title: " xcode-13-1", vmIdentifier: "")
-                .listRowBackground(Color.red.opacity(0.1))
+        List(viewModel.avialableVMs) { vmBundle in
+            VMListViewItem(viewModel: VMListViewItemViewModel(vmBundle: vmBundle))
+                //.listRowBackground(Color.green.opacity(0.1))
         }
-        .listStyle(.sidebar)
     }
 }
 
 struct VMListView_Previews: PreviewProvider {
     static var previews: some View {
-        VMListView()
+        let viewModel = VMListViewModel()
+        VMListView(viewModel: viewModel)
             .frame(width: 330, height: 300)
     }
 }

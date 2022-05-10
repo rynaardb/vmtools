@@ -39,7 +39,7 @@ public class VMManager: NSObject {
             return nil
         }
         
-        let vm = VM(name: vmBundle.name, identifier: "HASH", vzVirtualMachine: vzVirtualMachine)
+        let vm = VM(name: vmBundle.name, identifier: "TODO", vzVirtualMachine: vzVirtualMachine)
         
         return vm
     }

@@ -12,8 +12,9 @@ public enum VMOSType: String {
     case linux = "linux"
 }
 
-public struct VMBundle {
-    let name: String
+public struct VMBundle: Identifiable {
+    public let id = UUID()
+    public let name: String
     let path: String
     let fullPath: URL
     let diskImagePath: URL
@@ -27,7 +28,7 @@ public struct VMBundle {
         self.name = name
         self.path = path
 
-        fullPath = URL(fileURLWithPath: path).appendingPathComponent(name).appendingPathExtension("bundle")
+        fullPath = URL(fileURLWithPath: path)
         
         diskImagePath = fullPath.appendingPathComponent("Disk.img")
         auxiliaryStorageURL = fullPath.appendingPathComponent("AuxiliaryStorage")

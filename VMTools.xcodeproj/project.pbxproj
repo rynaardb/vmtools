@@ -27,6 +27,8 @@
 		F11623502823252A00F4E81C /* VirtualMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116234F2823252A00F4E81C /* VirtualMachineView.swift */; };
 		F116235828232E8400F4E81C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116235728232E8400F4E81C /* main.swift */; };
 		F142852728283ACE00C44364 /* VMListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142852628283ACE00C44364 /* VMListViewItem.swift */; };
+		F18E1AA8282AEA9D00934E34 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E1AA7282AEA9D00934E34 /* UserDefaults+Extensions.swift */; };
+		F18E1AAA282AEE3F00934E34 /* VMListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18E1AA9282AEE3F00934E34 /* VMListViewModel.swift */; };
 		F1B308B42822F8F00026F08C /* VMToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308B32822F8F00026F08C /* VMToolsApp.swift */; };
 		F1B308B62822F8F00026F08C /* VMViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B308B52822F8F00026F08C /* VMViewer.swift */; };
 		F1B308B82822F8F20026F08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B308B72822F8F20026F08C /* Assets.xcassets */; };
@@ -126,6 +128,8 @@
 		F116235728232E8400F4E81C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F1162361282332FD00F4E81C /* VMInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMInventory.swift; sourceTree = "<group>"; };
 		F142852628283ACE00C44364 /* VMListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMListViewItem.swift; sourceTree = "<group>"; };
+		F18E1AA7282AEA9D00934E34 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		F18E1AA9282AEE3F00934E34 /* VMListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMListViewModel.swift; sourceTree = "<group>"; };
 		F1B308B02822F8F00026F08C /* VMTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B308B32822F8F00026F08C /* VMToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMToolsApp.swift; sourceTree = "<group>"; };
 		F1B308B52822F8F00026F08C /* VMViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMViewer.swift; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 				F1B308BC2822F8F20026F08C /* VMTools.entitlements */,
 				F1B308B32822F8F00026F08C /* VMToolsApp.swift */,
 				F1B308B52822F8F00026F08C /* VMViewer.swift */,
+				F18E1AA7282AEA9D00934E34 /* UserDefaults+Extensions.swift */,
+				F18E1AA9282AEE3F00934E34 /* VMListViewModel.swift */,
 			);
 			path = VMTools;
 			sourceTree = "<group>";
@@ -567,6 +573,8 @@
 				F1B308B62822F8F00026F08C /* VMViewer.swift in Sources */,
 				F10E3D1E2825BA44009C9814 /* VMListView.swift in Sources */,
 				F1B308B42822F8F00026F08C /* VMToolsApp.swift in Sources */,
+				F18E1AA8282AEA9D00934E34 /* UserDefaults+Extensions.swift in Sources */,
+				F18E1AAA282AEE3F00934E34 /* VMListViewModel.swift in Sources */,
 				F11623502823252A00F4E81C /* VirtualMachineView.swift in Sources */,
 				F142852728283ACE00C44364 /* VMListViewItem.swift in Sources */,
 			);
